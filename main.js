@@ -1,3 +1,14 @@
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+  alert('Dont see my code');
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+      event.preventDefault();
+      alert('Dont see my code');
+  }
+});
 
 // preloader script............
 var audio = document.getElementById("audioPlayer");
