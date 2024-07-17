@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,13 +5,9 @@
 }
 
 *::selection {
-    background-color: transparent;
+    background-color: transparent; /* when user selects text, it should be transparent */
 }
 
-*::-moz-selection {
-    background: transparent;
-}
- 
 * {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -30,8 +25,8 @@ html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-
 }
+
 :root{
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     cursor:default;
@@ -251,8 +246,8 @@ header{
     align-items: flex-end;
     justify-content: center;
 }
+
 #preloader{
-    background-color:white;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -261,11 +256,9 @@ header{
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    background-image: url(src/svg/Pulse-0.4s-200px.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10%;
-    filter: invert(1);
 
 }
 noscript{
@@ -1983,13 +1976,3 @@ transition-duration: 1s;
         gap: 20px;
     }
   }
-  /* https://github.com/vinodjangid07 */
-  /* responsive code above */
-/*   
-
-  @media screen and (min-height: 900px) and (max-width: 600px) {
-
-    .text-content{
-        justify-content: flex-start;
-    }
-  } */

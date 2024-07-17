@@ -1,12 +1,12 @@
 document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
-  alert('Dont see my code');
+  alert('Console is protected');
 });
 
 document.addEventListener('keydown', function(event) {
   if (event.ctrlKey && event.shiftKey && event.key === 'I') {
       event.preventDefault();
-      alert('Dont see my code');
+      alert('Console is protected');
   }
 });
 
@@ -14,9 +14,11 @@ document.addEventListener('keydown', function(event) {
 var audio = document.getElementById("audioPlayer");
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
-  loader.style.display = "none";
-  document.querySelector('.hey').classList.add('popup');
-})
+  setTimeout(function() {
+    loader.style.display = "none";
+    document.querySelector('.hey').classList.add('popup');
+  }, 6000); 
+});
 
 // preloader script ends here.........
 
