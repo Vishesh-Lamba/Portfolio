@@ -17,103 +17,94 @@
   <meta property="og:site_name" content="Vishesh Lamba Portfolio" />
   <title>Vishesh Lamba | Portfolio</title>
   <link rel="icon" type="image/x-icon" href="src/png/favicon.png" />
-
-  <!-- aos cdn -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-  <!-- stylesheet -->
   <link rel="stylesheet" href="style.css" />
   <!-- google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
-
+</head>
+<!--Body Goes Here-->
 <body class="body">
+<!--Audio Player-->
   <audio loop="" id="audioPlayer" style="display: none">
     <source src="src/mp3/preloader.mp3" type="audio/mp3" />
   </audio>
-
   <!--Preloader-->
   <div id="preloader">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
-    <spline-viewer loading-anim-type="none" url="https://prod.spline.design/08Y3zFnQr3caZTDc/scene.splinecode"></spline-viewer>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <dotlottie-player src="https://lottie.host/6ba01e7a-b31a-42de-8b7c-443c503a9bc2/yegpyR22Ep.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
   </div>
-
   <noscript>JavaScript is disabled in your browser. Please enable JavaScript to use all the features of this site.</noscript>
-
+  <div class="cursor-inner" id="cursor-inner"></div>
+  <div class="cursor-outer" id="cursor-outer"></div>
+<!--Header Section-->
   <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
-
     <div class="navbar" id="navbar">
       <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0" aria-label="Vishesh Lamba logo">
+      <div class="logo" aria-label="Vishesh Lamba logo">
         <div class="logo-top">
           <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
         </div>
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
         <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
+          <li class="home activeThistab" class="navbar-tabs-li" >
+            <a href="#home"  aria-label="Home menu button">
               &#60;/Home&#62;
             </a>
           </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+          <li class="about" class="navbar-tabs-li">
             <a href="#about" aria-label="about menu button">
               &#60;/AboutMe&#62;
             </a>
           </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+          <li class="skills" class="navbar-tabs-li">
             <a href="#skills" aria-label="skills menu button">
               &#60;/Skills&#62;
             </a>
           </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+          <li class="projects" class="navbar-tabs-li" >
             <a href="#projects" aria-label="projects menu button">
               &#60;/Projects&#62;
             </a>
           </li>
         </ul>
       </div>
-      <!-- navbar tabs ends -->
     </div>
   </header>
   <!-- header ends here -->
 
   <main>
     <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
+    <div class="hamburger" id="hamburger" >
       <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+        <button id="hamburger-button" onclick="hamburgerMenu()" aria-label="Menu Button">
           <span class="burger-bar" id="burger-bar1"></span>
           <span class="burger-bar" id="burger-bar2"></span>
           <span class="burger-bar" id="burger-bar3"></span>
         </button>
       </div>
     </div>
-    <!-- hamburger -->
+    <!-- hamburger ends -->
     <div class="mobiletogglemenu" id="mobiletogglemenu">
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
         <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
+          <a href="#home"  aria-label="Home menu button">
             &#60;/Home&#62;
           </a>
         </li>
 
         <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
+          <a href="#about" aria-label="about menu button">
             &#60;/AboutMe&#62;
           </a>
         </li>
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
+          <a href="#skills" aria-label="skills menu button">
             &#60;/Skills&#62;
           </a>
         </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
+          <a href="#projects"  aria-label="projects menu button">
             &#60;/Projects&#62;
           </a>
         </li>
@@ -121,11 +112,12 @@
     </div>
     <!-- mobile toggle menu ends -->
 
+<!--Home Section-->
     <section class="landing-page-container" id="home">
       <div class="blob"></div>
 
       <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+        <article id="hello-friend" >
           <p class="jello">N</p>
           <p class="jello">a</p>
           <p class="jello">m</p>
@@ -141,7 +133,7 @@
           <p class="jello">'</p>
           <p class="jello">m</p>
         </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
+        <article id="name" >
           <p class="jello">V</p>
           <p class="jello">i</p>
           <p class="jello">s</p>
@@ -158,7 +150,7 @@
           <p class="jello">.</p>
         </article>
 
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
+        <article id="work" >
           <div>
             <p class="jello">I</p>
           </div>
@@ -191,14 +183,15 @@
             <p class="jello">.</p>
           </div>
         </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+        <p id="info-para">
           Full Stack Web Developer with experience of MERN Stack.
         I Love coding, collaboration and making products.
           I value simple content structure, clean design patterns, and
           thoughtful interactions.
         </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:nitkkrvishesh@gmail.com" tabindex="-1">
+      <!--Settings-->
+        <div class="contact-btn-div">
+          <a href="mailto:nitkkrvishesh@gmail.com">
             <button class="letsTalkBtn">
               <p class="letsTalkBtn-text">Let's Talk!</p>
               <span class="letsTalkBtn-BG"></span>
@@ -206,18 +199,18 @@
           <div class="setting-container" id="setting-container">
             <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
 
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" 
               aria-label="settings for sound and appearance"></label>
 
             <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
               <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+              <label for="switchforvisualmode" id="labelforvisualmode" 
                 aria-label="switch appearance"></label>
             </div>
 
             <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
               <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+              <label for="switchforsound" id="labelforsound"  aria-label="switch sound"
                 class="needtobeinvert"></label>
             </div>
           </div>
@@ -225,46 +218,44 @@
         </div>
         <!-- contact-btn-div -->
       </div>
-     
     </section>
-    <!-- landing page ends here -->
+  <!--Home ends here-->
+
+  <!--About Section-->
     <section class="about-section-container" id="about" data-aos="fade-up">
       <div class="about-section">
         <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+          <h2 class="section-heading-article"  aria-label="About me heading">
             &#60;/AboutMe&#62;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
-
         <div class="info-dp-section">
           <div class="about-info">
-            <p tabindex="0">
+            <p >
               Hi, I'm Vishesh Lamba, a passionate and dedicated web developer, With a strong foundation in HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS, I am continuously expanding my skill set to include GSAP, React.js, Next.js, Express.js, Node.js, and MongoDB.
             </p>
             <br />
-            <p tabindex="0">
+            <p >
               I have been working on impactful projects focused on study partners and women safety, aiming to leverage technology to create solutions that make a difference.
             </p>
             <br />
-            <p tabindex="0">
+            <p>
               I am always eager to take on new challenges and collaborate with others to create innovative and effective web solutions. Let's connect and bring your ideas to life!
             </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+<!-- Resume button -->
+      <button class="resume-btn" id="resume-btn">
         <div class="sign">
           <svg viewBox="0 0 640 512">
             <path
               d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
           </svg>
         </div>
-
         <div class="text">Resume</div>
       </button>
           </div>
-
-          <div class="dp" data-aos="fade-up">
-            <img src="src/png/vishesh.png" alt="Vishesh Lamba" tabindex="0" aria-label="image of vishesh lamba" />
+          <div class="dp">
+            <img src="src/png/vishesh.png" alt="Vishesh Lamba" aria-label="image of vishesh lamba" />
           </div>
         </div>
       </div>
@@ -281,72 +272,72 @@
         </div>
 
         <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+          <h3 class="frontend-dev-heading"
             aria-label="As a frontend a developer these are the skills i have">
             Tech Stack
           </h3>
           <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
               <span class="tooltip">HTML</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box">
               <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
               <span class="tooltip">CSS</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
               <span class="tooltip">JS</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box">
               <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
               <span class="tooltip">BOOTSTRAP</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
               <span class="tooltip">REACT</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
               <span class="tooltip">GITHUB</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
               <span class="tooltip">GIT</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
               <span class="tooltip">C</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
               <span class="tooltip">C++</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box">
               <img src="./src/png/pslogo.png" alt="photoshop skill" class="tech-stack-logo" />
               <span class="tooltip">ADOBE PS</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
               <span class="tooltip">FIGMA</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/ailogo.png" alt="adobe illustrator skill" class="tech-stack-logo" />
               <span class="tooltip">ADOBE AI</span>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
+            <li class="tech-stack-box" >
               <img src="./src/png/canvalogo.png" alt="canva skill" class="tech-stack-logo" />
               <span class="tooltip">CANVA</span>
             </li>
@@ -357,8 +348,8 @@
     <!-- skills section ends -->
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+        <div class="section-heading">
+          <h2 class="section-heading-article"  aria-label="My projects starts from here">
             &#60;/Projects&#62;
           </h2>
           <p class="sectionHeadingP"></p>

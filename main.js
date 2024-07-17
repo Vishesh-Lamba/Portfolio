@@ -2,7 +2,6 @@ document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
   alert('Console is protected');
 });
-
 document.addEventListener('keydown', function(event) {
   if (event.ctrlKey && event.shiftKey && event.key === 'I') {
       event.preventDefault();
@@ -17,9 +16,8 @@ window.addEventListener("load", function () {
   setTimeout(function() {
     loader.style.display = "none";
     document.querySelector('.hey').classList.add('popup');
-  }, 6000); 
+  }, 4500); 
 });
-
 // preloader script ends here.........
 
 // switch for setting
@@ -38,25 +36,16 @@ function playpause() {
  }
   }
 
-  function visualmode(){
-    document.body.classList.toggle('light-mode');
-    var elements = document.querySelectorAll('.needtobeinvert');
-    elements.forEach(function(element) {
-        element.classList.toggle('invertapplied');
-    });
-
-
-  }
 let emptyArea = document.getElementById("emptyarea");
- let mobileTogglemenu = document.getElementById("mobiletogglemenu");
+let mobileTogglemenu = document.getElementById("mobiletogglemenu");
 // toggle menu by clicking on hamburger
 function hamburgerMenu() {
     document.body.classList.toggle("stopscrolling");
- document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
-document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
-document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
-document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
-}
+    document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
+    document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
+    document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
+    document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
+ } 
 // close mobile toggle menu by clicking on LI
 function hidemenubyli(){
 document.body.classList.toggle("stopscrolling");
